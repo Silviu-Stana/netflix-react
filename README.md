@@ -5,11 +5,11 @@ A sleek and responsive Netflix-inspired web app built using **Next.js**. This pr
 
 ## Features
 
-- **Dynamic Content**: Displays a variety of movies and TV shows with images and descriptions.
-- **Responsive Design**: Optimized for desktop and mobile devices.
-- **Netflix-like UI**: Clean and modern UI mimicking the iconic Netflix homepage.
-- **Routing**: Seamless navigation using Next.js routing for smooth user experience.
-- **Styled Components**: Leveraging styled-components for easy and modular CSS styling.
+- 🎬 **Dynamic Content**: Displays a variety of movies and TV shows with images and descriptions.
+- 📱 **Responsive Design**: Optimized for desktop and mobile devices.
+- 🎥 **Netflix-like UI**: Clean and modern UI mimicking the iconic Netflix homepage.
+- 🚀 **Routing**: Seamless navigation using Next.js routing for smooth user experience.
+- 🎨 **Styled Components**: Leveraging styled-components for easy and modular CSS styling.
 
 ## Technologies Used
 
@@ -19,8 +19,7 @@ A sleek and responsive Netflix-inspired web app built using **Next.js**. This pr
 - **CSS** - For layout and responsive design adjustments.
 
 ## Installation
-
-### 1. Clone the repo to try it out!
+### Clone the repo to try it out!
 
 ```bash
 git clone https://github.com/Silviu-Stana/netflix-react.git
