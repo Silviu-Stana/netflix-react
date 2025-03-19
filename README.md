@@ -1,40 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Netflix Mockup Web App
 
-## Getting Started
+A sleek and responsive Netflix-inspired web app built using **Next.js**. This project showcases a beautiful user interface with dynamic content loading and a seamless viewing experience, mimicking the feel of Netflix.
 
-First, run the development server:
+## Features
+
+- **Dynamic Content**: Displays a variety of movies and TV shows with images and descriptions.
+- **Responsive Design**: Optimized for desktop and mobile devices.
+- **Netflix-like UI**: Clean and modern UI mimicking the iconic Netflix homepage.
+- **Routing**: Seamless navigation using Next.js routing for smooth user experience.
+- **Styled Components**: Leveraging styled-components for easy and modular CSS styling.
+
+## Technologies Used
+
+- **Next.js** - React framework for building the app with server-side rendering.
+- **React** - The core library for building user interfaces.
+- **Styled Components** - For scoped CSS styling, enabling component-level styles.
+- **CSS** - For layout and responsive design adjustments.
+
+## Installation
+
+### 1. Clone the repo to try it out!
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+git clone https://github.com/Silviu-Stana/netflix-react.git
