@@ -2,13 +2,11 @@ import Input from '@/components/input';
 import axios from 'axios';
 import { signIn } from 'next-auth/react';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import { useCallback, useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 
 const Auth = () => {
-    const router = useRouter();
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
@@ -23,18 +21,23 @@ const Auth = () => {
 
     const login = useCallback(async () => {
         try {
-            await signIn('credentials', {
+            const result = await signIn('credentials', {
                 email,
                 password,
                 redirect: false,
-                callbackUrl: '/',
+                callbackUrl: '/profiles',
             });
 
-            router.push('/');
+            if (result?.error) {
+                console.error('Login failed:', result.error);
+            } else {
+                console.log('Login successful:', result);
+                window.location.href = '/profiles';
+            }
         } catch (error) {
-            console.log(error);
+            console.error('An unexpected error occurred:', error);
         }
-    }, [email, password, router]);
+    }, [email, password]);
 
     const register = useCallback(async () => {
         try {
@@ -111,14 +114,18 @@ const Auth = () => {
                             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition">
                                 <FcGoogle
                                     onClick={() =>
-                                        signIn('google', { callbackUrl: '/' })
+                                        signIn('google', {
+                                            callbackUrl: '/profiles',
+                                        })
                                     }
                                     size={30}
                                 />
                             </div>
                             <div
                                 onClick={() =>
-                                    signIn('github', { callbackUrl: '/' })
+                                    signIn('github', {
+                                        callbackUrl: '/profiles',
+                                    })
                                 }
                                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition"
                             >
