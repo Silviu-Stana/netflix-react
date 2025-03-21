@@ -1,4 +1,4 @@
-import Input from '../components/Input';
+import InputComponent from '../components/InputComponent';
 import axios from 'axios';
 import { signIn } from 'next-auth/react';
 import Image from 'next/image';
@@ -77,7 +77,7 @@ const Auth = () => {
                         </h2>
                         <div className="flex flex-col gap-4">
                             {variant === 'register' && (
-                                <Input
+                                <InputComponent
                                     label="Username"
                                     id="name"
                                     onChange={(e: any) =>
@@ -87,14 +87,14 @@ const Auth = () => {
                                 />
                             )}
 
-                            <Input
+                            <InputComponent
                                 label="Email"
                                 id="email"
                                 type="email"
                                 onChange={(e: any) => setEmail(e.target.value)}
                                 value={email}
                             />
-                            <Input
+                            <InputComponent
                                 label="Password"
                                 id="password"
                                 type="password"
