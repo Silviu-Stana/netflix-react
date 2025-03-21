@@ -23,7 +23,7 @@ export default async function handler(
 
             const user = await prismadb.user.update({
                 where: {
-                    email: currentUser.email || '',
+                    email: currentUser?.email || '',
                 },
                 data: {
                     favoriteIds: {
